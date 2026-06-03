@@ -62,8 +62,3 @@ if harta not in goa:
     if node_acak != "Harta Karun":
         goa[node_acak].append(harta)
         goa[harta] = []
-
-time.sleep(0.5)
-print("Penelusuran DFS...\n")
-time.sleep(1)
-print("Mulai")

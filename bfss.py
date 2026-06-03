@@ -61,6 +61,3 @@ goa = {
     "Ranjau Mematikan": ["Air Garam"],
     "Harta Karun": [],
 }
-
-time.sleep(1.25)
-print("=> Penelusuran Bfs....")
