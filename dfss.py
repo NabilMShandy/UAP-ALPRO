@@ -7,9 +7,9 @@ def dfs(graf, start, visited=None):
         visited = set()
 
     visited.add(start)
-
     time.sleep(0.5)
     print(start, end="")
+    
     time.sleep(0.5)
     print(end=" -> ")
 

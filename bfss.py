@@ -3,13 +3,13 @@ from collections import deque
 from art import art_2
 
 def Bfs(graf,start):
-     queue= deque([start])
+     queue = deque([start])
      # Set untuk mencatat Tempat di Dungeon yang sudah dikunjungi agar tidak terjadi looping
-     visited={start}
+     visited = {start}
 
-     print(f"{start}",end="")
+     print(f"{start}", end="")
      counter = 0
-
+     hitung_waktu = 0
      while queue:
          current= queue.popleft()
          if current == "Harta Karun" :
@@ -22,13 +22,14 @@ def Bfs(graf,start):
                  if tetangga not in visited:
                      visited.add(tetangga)
                      queue.append(tetangga)
-
                      time.sleep(0.5)
                      print(f" ==>> {tetangga}", end="")
+                     hitung_waktu+=1
                      counter += 1
                      if counter == 3:
                         print()
                         counter = 0
+                        
      print("\n tidak ditemukan!")
      return False
 

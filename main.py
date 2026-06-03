@@ -7,7 +7,7 @@ if __name__ == "__main__":
     while True:
         tampilkan_banner()
         time.sleep(2)
-        # start_program()
+        start_program()
         
         print("="*50)
         print(f" INVESTIGASI GUA MISTERIUS - USER:")
